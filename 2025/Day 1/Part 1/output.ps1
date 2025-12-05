@@ -1,5 +1,7 @@
 $TextInput = @()
-$TextInput = get-content "C:\Users\JonasWeberNobel\source\repos\AdventOfCode\2025\Day 1\Part1\input.txt"
+$GetLocation = Get-Location
+$Path = -join ($GetLocation, "\2025\Day 1\Part 1\input.txt")
+$TextInput = get-content $Path
 $ZeroCounter = 0
 $DialRange = @(0..99)
 $DialLocation = $DialRange[50]
