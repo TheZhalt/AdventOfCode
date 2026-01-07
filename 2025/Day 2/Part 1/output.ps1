@@ -1,4 +1,4 @@
-$TextInput = @()
+$InputArray = @()
 $GetLocation = Get-Location
 $Path = -join ($GetLocation, "\2025\Day 2\Part 1\input.txt")
 $InputArray = @(get-content $Path -Delimiter ",")
